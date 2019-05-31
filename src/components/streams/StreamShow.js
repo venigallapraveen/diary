@@ -24,8 +24,8 @@ class StreamShow extends React.Component {
         return (
             <div>
 
-                <h1>{title}</h1>
-                <h5>{description}</h5>
+                <h1 className="title has-text-centered has-text-primary">{title}</h1>
+                <h5 className="has-text-centered subtitle">{description}</h5>
             </div>
         );
     }

@@ -9,6 +9,7 @@ import StreamList from "./streams/StreamList";
 import StreamEdit from "./streams/StreamEdit";
 import StreamDelete from "./streams/StreamDelete";
 
+
 const App = () => {
   return (
     <div className='ui container'>
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/streams/delete/:id" exact component={StreamDelete} />
           <Route path="/streams/:id" exact component={StreamShow} />
           </Switch>
+
         </div>
       </Router>
     </div>

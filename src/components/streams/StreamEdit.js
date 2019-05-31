@@ -20,7 +20,7 @@ class StreamEdit extends React.Component {
 
     return (
       <div>
-        <h3>Edit a Stream</h3>
+        <h1 className="title has-text-primary has-text-weight-bold has-text-centered">Edit Post</h1>
         <StreamForm
           initialValues={_.pick(this.props.stream, "title", "description")}
           onSubmit={this.onSubmit}

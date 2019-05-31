@@ -4,6 +4,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import reduxThunk from 'redux-thunk';
 import { Provider } from "react-redux";
 import reducers from "./reducers";
+import 'bulma';
 
 
 import App from "./components/App";

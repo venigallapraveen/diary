@@ -23,6 +23,17 @@ class StreamForm extends React.Component {
         );
     };
 
+    renderDescription = ({ input, label, meta }) => {
+        const className = `field ${meta.error && meta.touched ? 'error' : ''}`;
+        return (
+            <div className={className}>
+                <label>{label}</label>
+                <textarea class="textarea"  rows="10" {...input} autoComplete="off" />
+                {this.renderError(meta)}
+            </div>
+        );
+    };
+
     onSubmit = formValues => {
         this.props.onSubmit(formValues);
     };
@@ -36,10 +47,10 @@ class StreamForm extends React.Component {
                 <Field name="title" component={this.renderInput} label="Enter Title" />
                 <Field
                     name="description"
-                    component={this.renderInput}
+                    component={this.renderDescription}
                     label="Enter Description"
                 />
-                <button className="ui button primary">Submit</button>
+                <button className="button is-primary">Submit</button>
             </form>
         );
     }
