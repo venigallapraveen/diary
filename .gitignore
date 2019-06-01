@@ -7,4 +7,4 @@ node_modules
 public/*
 build/static/css/*.map
 build/static/js/*.map
-config
+src/config
