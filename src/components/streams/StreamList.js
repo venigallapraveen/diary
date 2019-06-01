@@ -36,7 +36,7 @@ class StreamList extends React.Component {
     renderList() {
         return this.props.streams.map(stream => {
             return (
-                <div className="card" style={{maxHeight:90}}>
+                <div className="card">
 
                     <div key={stream.id} class="card-content">
                         <div className="media">
